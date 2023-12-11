@@ -1,30 +1,13 @@
 const express = require("express");
-
-function bookFunction(req, res) {
-  const books = [
-    {
-      title: "Harry Pottered",
-      description: "Fantasy movie",
-      year: 2000,
-    },
-    {
-      title: "Lord of The Rings",
-      description: "Fantasy movie",
-      year: 2001,
-    },
-    {
-      title: "The Hobbit",
-      description: "Fantasy movie",
-      year: 2002,
-    },
-  ];
-
-  res.json(books);
-}
-
 const app = express();
 
 const port = 3000;
+
+const bookController = (req, res) => {
+  return res.json({
+    message: "All books",
+  });
+};
 
 app.get("/", (req, res) => {
   res.json({
@@ -32,7 +15,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/books", bookFunction);
+app.get("/books", bookController);
 
 app.listen(port, () => {
   console.log("Server is running on port " + port);

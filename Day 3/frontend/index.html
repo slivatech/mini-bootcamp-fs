@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,900;1,100;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="todo.js"></script>
+    <title>To do Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="title">To Do List</h1>
+        <div class="todo-list">
+          <div class="todo-item">
+            <div class="todo-item-left-section">
+              <h5 class="todo-item-title">Bangun Tidur</h5>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                height="24px"
+                width="24px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                ></path>
+              </svg>
+            </div>
+            <div class="todo-item-right-section">
+              <input
+                type="checkbox"
+                name="todo-item-checkbox"
+                id="todo-item-checkbox"
+              />
+            </div>
+          </div>
+          <div class="todo-item">
+            <div class="todo-item-left-section">
+              <h5 class="todo-item-title">Bangun Tidur</h5>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                height="24px"
+                width="24px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                ></path>
+              </svg>
+            </div>
+            <div class="todo-item-right-section">
+              <input
+                type="checkbox"
+                name="todo-item-checkbox"
+                id="todo-item-checkbox"
+              />
+            </div>
+          </div>
+        </div>
+        <form class="form-todo" onsubmit="addTodo(event)">
+          <div class="form-control">
+            <input
+              type="text"
+              name="todo-item"
+              id="todo-item"
+              class="todo-input"
+              placeholder="Add new todo"
+              value="Bangun Tidur"
+            />
+          </div>
+          <button class="todo-add-button">Add</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

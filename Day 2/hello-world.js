@@ -1,3 +1,5 @@
-let variableLet = "Fallah";
-const varibleConst = "Andy";
-var variableVar = "Andy";
+if (true) {
+  const variableConst = "Fallah";
+}
+
+console.log(variableConst);
